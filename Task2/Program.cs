@@ -16,6 +16,10 @@ int Bx = Prompt("Введите координту точки B по оси х >
 int By = Prompt("Введите координту точки B по оси y > ");
 int Bz = Prompt("Введите координту точки B по оси z > ");
 
-double result = Math.Sqrt((Ax - Bx) * (Ax - Bx) + (Ay - By) * (Ay - By) + (Az - Bz) * (Az - Bz));
-
-System.Console.WriteLine(result);
+double Length(int x, int y, int z)
+{
+    double result = Math.Sqrt((Ax - Bx) * (Ax - Bx) + (Ay - By) * (Ay - By) + (Az - Bz) * (Az - Bz));
+    System.Console.WriteLine(result);
+    return result;
+}
+Length(Ax, Ay, Az);
